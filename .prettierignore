@@ -4,3 +4,4 @@ node_modules
 .prettierignore
 yarn.lock
 package-lock.json
+.husky
