@@ -15,10 +15,84 @@
     <title>Тинькофф Образование</title>
   </head>
   <body>
-    <div class="logo"></div>
-    <div class="login-icon"></div>
-    <img src="/assets/images/frontend.png" alt="Фронтенд технологии" />
-    <h1>Frontend-разработчик</h1>
+    
+    <header>
+      <div class="logo"></div>
+      <div class="navigation">
+        <nav>
+          <ul>
+            <li>
+              <a href="https://fintech.tinkoff.ru/study/fintech/frontend/"
+                >Финтех курсы</a
+              >
+            </li>
+            <li><a href="https://fintech.tinkoff.ru/start/">Стажировки</a></li>
+            <li>
+              <a href="https://fintech.tinkoff.ru/activities/"
+                >Мероприятия и партнерства</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="login">
+        <button>
+          <span>Войти</span>
+          <img src="/assets/icons/login.svg" alt="Иконка кнопки 'войти'" />
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <h1>Frontend-разработчик</h1>
+        <p>
+          Трехмесячный бесплатный учебный курс от Финтеха, который можно
+          проходить из любой точки России
+        </p>
+        <button type="button">Подробнее</button>
+        <img src="/assets/images/frontend.png" alt="Фронтенд технологии" />
+      </section>
+      <section>
+        <h2>Что вас ждет на курсе</h2>
+        <div class="wrapper">
+          <section class="info">
+            <h4 class="info__title">Основы разработки</h4>
+            <p class="info__description">
+              Делимся инструментами, которые позволяют нам создавать
+              веб-продукты для миллионов клиентов
+            </p>
+          </section>
+          <section class="info">
+            <h4 class="info__title">Доступ к учебным материалам онлайн</h4>
+            <p class="info__description">
+              Онлайн-курс с лекциями  и домашними заданиями. Вы можете его
+              пройти из любой точки России
+            </p>
+          </section>
+          <section class="info">
+            <h4 class="info__title">Возможность попасть в команду</h4>
+            <p class="info__description">
+              Во время курса участники выполняют много практических заданий.  Мы
+              замечаем лучших и приглашаем  их на собеседование
+            </p>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-wrapper">
+        <div class="copyright"><span></span></div>
+        <div class="contact">
+          <address>
+            <span>По вопросам пишите на </span>
+            <a href="mailto:edu@tinkoff.ru">edu@tinkoff.ru</a>
+          </address>
+        </div>
+      </div>
+    </footer>
+
     <script type="module" src="./main.js"></script>
   </body>
 </html>
