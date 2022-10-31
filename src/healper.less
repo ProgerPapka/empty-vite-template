@@ -1,0 +1,13 @@
+.app-container() {
+  margin: 0 auto;
+  max-width: 1360px;
+  width: 100%;
+}
+
+.box-shadow(@x, @y, @blur, @color, @inset: false, @spread: 0) {
+  box-shadow: if(
+    @inset,
+    inset @x @y @blur @spread @color,
+    @x @y @blur @spread @color
+  );
+}

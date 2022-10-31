@@ -15,84 +15,92 @@
     <title>Тинькофф Образование</title>
   </head>
   <body>
-    
-    <header>
-      <div class="logo"></div>
-      <div class="navigation">
-        <nav>
-          <ul>
-            <li>
-              <a href="https://fintech.tinkoff.ru/study/fintech/frontend/"
-                >Финтех курсы</a
-              >
-            </li>
-            <li><a href="https://fintech.tinkoff.ru/start/">Стажировки</a></li>
-            <li>
-              <a href="https://fintech.tinkoff.ru/activities/"
-                >Мероприятия и партнерства</a
-              >
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <div class="login">
-        <button>
-          <span>Войти</span>
-          <img src="/assets/icons/login.svg" alt="Иконка кнопки 'войти'" />
-        </button>
-      </div>
-    </header>
+    <div class="app">
+      <header class="header">
+        <div class="header-container">
+          <div class="header-content">
+            <div class="logo"></div>
+            <nav class="navigation">
+              <ul class="navigation__list">
+                <li class="navigation__link navigation__link_active">
+                  <a href="https://fintech.tinkoff.ru/study/fintech/frontend/"
+                    >Финтех курсы</a
+                  >
+                </li>
+                <li class="navigation__link">
+                  <a href="https://fintech.tinkoff.ru/start/">Стажировки</a>
+                </li>
+                <li class="navigation__link">
+                  <a href="https://fintech.tinkoff.ru/activities/"
+                    >Мероприятия и партнерства</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <div class="login">
+              <button class="login-btn">
+                <span class="login-btn__name">Войти</span>
+                <img
+                  src="/assets/icons/login.svg"
+                  alt="Иконка кнопки 'войти'" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
 
-    <main>
-      <section>
-        <h1>Frontend-разработчик</h1>
-        <p>
-          Трехмесячный бесплатный учебный курс от Финтеха, который можно
-          проходить из любой точки России
-        </p>
-        <button type="button">Подробнее</button>
-        <img src="/assets/images/frontend.png" alt="Фронтенд технологии" />
-      </section>
-      <section>
-        <h2>Что вас ждет на курсе</h2>
-        <div class="wrapper">
-          <section class="info">
-            <h4 class="info__title">Основы разработки</h4>
-            <p class="info__description">
-              Делимся инструментами, которые позволяют нам создавать
-              веб-продукты для миллионов клиентов
+      <main>
+        <div class="main-container">
+          <section>
+            <h1>Frontend-разработчик</h1>
+            <p>
+              Трехмесячный бесплатный учебный курс от Финтеха, который можно
+              проходить из любой точки России
             </p>
+            <button type="button">Подробнее</button>
+            <img src="/assets/images/frontend.png" alt="Фронтенд технологии" />
           </section>
-          <section class="info">
-            <h4 class="info__title">Доступ к учебным материалам онлайн</h4>
-            <p class="info__description">
-              Онлайн-курс с лекциями  и домашними заданиями. Вы можете его
-              пройти из любой точки России
-            </p>
-          </section>
-          <section class="info">
-            <h4 class="info__title">Возможность попасть в команду</h4>
-            <p class="info__description">
-              Во время курса участники выполняют много практических заданий.  Мы
-              замечаем лучших и приглашаем  их на собеседование
-            </p>
+          <section>
+            <h2>Что вас ждет на курсе</h2>
+            <div class="wrapper">
+              <section class="info">
+                <h4 class="info__title">Основы разработки</h4>
+                <p class="info__description">
+                  Делимся инструментами, которые позволяют нам создавать
+                  веб-продукты для миллионов клиентов
+                </p>
+              </section>
+              <section class="info">
+                <h4 class="info__title">Доступ к учебным материалам онлайн</h4>
+                <p class="info__description">
+                  Онлайн-курс с лекциями  и домашними заданиями. Вы можете его
+                  пройти из любой точки России
+                </p>
+              </section>
+              <section class="info">
+                <h4 class="info__title">Возможность попасть в команду</h4>
+                <p class="info__description">
+                  Во время курса участники выполняют много практических заданий.
+                   Мы замечаем лучших и приглашаем  их на собеседование
+                </p>
+              </section>
+            </div>
           </section>
         </div>
-      </section>
-    </main>
+      </main>
 
-    <footer>
-      <div class="footer-wrapper">
-        <div class="copyright"><span></span></div>
-        <div class="contact">
-          <address>
-            <span>По вопросам пишите на </span>
-            <a href="mailto:edu@tinkoff.ru">edu@tinkoff.ru</a>
-          </address>
+      <footer>
+        <div class="footer-container">
+          <div class="copyright"><span></span></div>
+          <div class="contact">
+            <address>
+              <span>По вопросам пишите на </span>
+              <a href="mailto:edu@tinkoff.ru">edu@tinkoff.ru</a>
+            </address>
+          </div>
         </div>
-      </div>
-    </footer>
-
+      </footer>
+    </div>
     <script type="module" src="./main.js"></script>
   </body>
 </html>
