@@ -11,14 +11,574 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
       rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Тинькофф Образование</title>
   </head>
   <body>
-    <div class="logo"></div>
-    <div class="login-icon"></div>
-    <img src="/assets/images/frontend.png" alt="Фронтенд технологии" />
-    <h1>Frontend-разработчик</h1>
+    <!-- Navbar -->
+    <nav class="nav">
+      <div class="nav__wrapper container">
+        <div class="nav__left-side">
+          <a href="/">
+            <img
+              class="nav__logo"
+              src="https://www.cdn-tinkoff.ru/frontend-libraries/pfcore-static-assets/logos/main-logo.svg"
+              alt="Logo" />
+          </a>
+          <ul class="nav__links">
+            <li class="nav__links-item nav__links-item--active">
+              Финтех курсы
+            </li>
+            <li class="nav__links-item">Стажировки</li>
+            <li class="nav__links-item">Мероприятия и партнерства</li>
+          </ul>
+        </div>
+        <div class="hamburger">
+          <div></div>
+        </div>
+        <div class="nav__mobile-menu">
+          <ul class="nav__links nav__links--mobile">
+            <li class="nav__links-item">Финтех курсы</li>
+            <li class="nav__links-item">Стажировки</li>
+            <li class="nav__links-item">Мероприятия и партнерства</li>
+          </ul>
+          <button class="nav__button">
+            Войти <img src="./assets/icons/login.svg" alt="" />
+          </button>
+        </div>
+        <div class="nav__right-side">
+          <button class="nav__button">
+            Войти <img src="./assets/icons/login.svg" alt="" />
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="header hidden">
+      <div class="header__wrapper container">
+        <h1 class="header__title">Frontend-разработчик</h1>
+        <p class="header__text text">
+          Трехмесячный бесплатный учебный курс от Финтеха, который можно
+          проходить из любой точки России
+        </p>
+        <a href="#scroll" class="btn">Подать заявку</a>
+        <img
+          class="header__logo"
+          src="/assets/images/frontend.png"
+          alt="Фронтенд технологии" />
+      </div>
+    </header>
+
+    <!-- Section -->
+    <section class="section hidden">
+      <div class="section__wrapper container">
+        <h1 class="section__title">Кому подойдет курс</h1>
+        <div class="section__container">
+          <div class="section__image-wrapper">
+            <img
+              class="section__image"
+              src="./assets/images/about-course-720.png"
+              alt="Кому подойдет курс" />
+          </div>
+          <ul class="list list--padding">
+            <li class="list__item">
+              <div class="list__dash"></div>
+              <p class="text">Вы студент или выпускник технических вузов</p>
+            </li>
+            <li class="list__item">
+              <div class="list__dash"></div>
+              <p class="text">Хотите научиться создавать интерфейсы</p>
+            </li>
+
+            <li class="list__item">
+              <div class="list__dash"></div>
+              <p class="text">
+                Хотите познакомиться с современным JavaScript и его фреймворками
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section -->
+    <section class="section hidden">
+      <div class="section__wrapper container">
+        <h1 class="section__title">Что вас ждет на курсе</h1>
+        <div class="section__container grid grid-cols-3">
+          <div class="card">
+            <h1 class="card__title">Основы разработки</h1>
+            <p class="card__text">
+              Делимся инструментами, которые позволяют нам создавать
+              веб-продукты для миллионов клиентов
+            </p>
+          </div>
+          <div class="card">
+            <h1 class="card__title">Доступ к учебным материалам онлайн</h1>
+            <p class="card__text">
+              Онлайн-курс с лекциями и домашними заданиями. Вы можете его пройти
+              из любой точки России
+            </p>
+          </div>
+          <div class="card">
+            <h1 class="card__title">Возможность попасть в команду</h1>
+            <p class="card__text">
+              Во время курса участники выполняют много практических заданий. Мы
+              замечаем лучших и приглашаем их на собеседование
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section -->
+    <section class="section hidden">
+      <div class="section__wrapper container">
+        <h1 class="section__title">Из чего состоит курс</h1>
+        <div class="section__container grid grid-full">
+          <div class="card card--padding">
+            <div class="accordion">
+              <div class="tab">
+                <div class="tab__label">
+                  Основы JavaScript
+                  <img
+                    class="tab__arrow"
+                    src="./assets/icons/arrow.svg"
+                    alt="" />
+                </div>
+                <div class="tab__content">
+                  <ul class="list">
+                    <li class="list__item">
+                      <div class="list__dash"></div>
+                      <p class="text">Изучим основы и тонкости языка</p>
+                    </li>
+                    <li class="list__item">
+                      <div class="list__dash"></div>
+                      <p class="text">Типы данных</p>
+                    </li>
+                    <li class="list__item">
+                      <div class="list__dash"></div>
+                      <p class="text">Области видимости и замыкания</p>
+                    </li>
+                    <li class="list__item">
+                      <div class="list__dash"></div>
+                      <p class="text">Прототипы и наследование</p>
+                    </li>
+                    <li class="list__item">
+                      <div class="list__dash"></div>
+                      <p class="text">Однопоточность и стек вызовов</p>
+                    </li>
+                    <li class="list__item">
+                      <div class="list__dash"></div>
+                      <p class="text">
+                        Асинхронные API: Promise, AJAX, async-await
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="tab">
+                <div class="tab__label">
+                  Основы верстки: HTML и CSS
+                  <img
+                    class="tab__arrow"
+                    src="./assets/icons/arrow.svg"
+                    alt="" />
+                </div>
+                <div class="tab__content">
+                  <ul class="list">
+                    <li class="list__item">
+                      <div class="list__dash"></div>
+                      <p class="text">
+                        HTML. Структура документа. HTML-элементы, классификация.
+                        Специальные символы
+                      </p>
+                    </li>
+                    <li class="list__item">
+                      <div class="list__dash"></div>
+                      <p class="text">
+                        CSS. Селекторы. Специфичность. Сброс стилей. Блочная
+                        модель. Единицы размера и цвета
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="tab">
+                <div class="tab__label">
+                  Работа с веб-страницей и событиями
+                  <img
+                    class="tab__arrow"
+                    src="./assets/icons/arrow.svg"
+                    alt="" />
+                </div>
+                <div class="tab__content">
+                  <ul class="list">
+                    <li class="list__item">
+                      <div class="list__dash"></div>
+                      <p class="text">
+                        Объектная модель документа и манипуляция DOM-элементами
+                      </p>
+                    </li>
+                    <li class="list__item">
+                      <div class="list__dash"></div>
+                      <p class="text">
+                        Шаблонизация и пользовательские веб-компоненты
+                      </p>
+                    </li>
+                    <li class="list__item">
+                      <div class="list__dash"></div>
+                      <p class="text">События DOM</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="tab">
+                <div class="tab__label">
+                  Работа с фреймворками Angular и React
+                  <img
+                    class="tab__arrow"
+                    src="./assets/icons/arrow.svg"
+                    alt="" />
+                </div>
+                <div class="tab__content">
+                  <ul class="list">
+                    <li class="list__item">
+                      <div class="list__dash"></div>
+                      <p class="text">
+                        Структура проекта, набор библиотек, система сборки,
+                        routing, lazy loading, dependency injection
+                      </p>
+                    </li>
+                    <li class="list__item">
+                      <div class="list__dash"></div>
+                      <p class="text">
+                        При изучении Angular поговорим также об RxJs
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="tab">
+                <div class="tab__label">
+                  Angular
+                  <img
+                    class="tab__arrow"
+                    src="./assets/icons/arrow.svg"
+                    alt="" />
+                </div>
+                <div class="tab__content">
+                  <ul class="list">
+                    <li class="list__item">
+                      <div class="list__dash"></div>
+                      <p class="text">TypeScript</p>
+                    </li>
+                    <li class="list__item">
+                      <div class="list__dash"></div>
+                      <p class="text">Компоненты</p>
+                    </li>
+                    <li class="list__item">
+                      <div class="list__dash"></div>
+                      <p class="text">Шаблонизация</p>
+                    </li>
+                    <li class="list__item">
+                      <div class="list__dash"></div>
+                      <p class="text">Реактивные формы</p>
+                    </li>
+                    <li class="list__item">
+                      <div class="list__dash"></div>
+                      <p class="text">
+                        DI и сервисы в архитектуре приложения. Иерархия
+                        инжекторов
+                      </p>
+                    </li>
+                    <li class="list__item">
+                      <div class="list__dash"></div>
+                      <p class="text">
+                        Firebase: БД, права доступа к БД, авторизация
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="tab">
+                <div class="tab__label">
+                  React
+                  <img
+                    class="tab__arrow"
+                    src="./assets/icons/arrow.svg"
+                    alt="" />
+                </div>
+                <div class="tab__content">
+                  <ul class="list">
+                    <li class="list__item">
+                      <div class="list__dash"></div>
+                      <p class="text">Babel/TypeScript и JSX</p>
+                    </li>
+                    <li class="list__item">
+                      <div class="list__dash"></div>
+                      <p class="text">Компонентный подход</p>
+                    </li>
+                    <li class="list__item">
+                      <div class="list__dash"></div>
+                      <p class="text">Состояние и свойства компонентов</p>
+                    </li>
+                    <li class="list__item">
+                      <div class="list__dash"></div>
+                      <p class="text">Жизненный цикл компонентов</p>
+                    </li>
+                    <li class="list__item">
+                      <div class="list__dash"></div>
+                      <p class="text">Работа с формами</p>
+                    </li>
+                    <li class="list__item">
+                      <div class="list__dash"></div>
+                      <p class="text">
+                        Redux, react-router, styled-components и прочий
+                        необходимый минимум
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section -->
+    <section class="section hidden">
+      <div class="section__wrapper container">
+        <h1 class="section__title">Как строится обучение</h1>
+        <div class="section__container grid grid-cols-2">
+          <div class="card">
+            <h1 class="card__title">Онлайн-занятия 1 раз в неделю</h1>
+            <ul class="list">
+              <li class="list__item">
+                <div class="list__dash"></div>
+                <p class="text">
+                  Курс стартует в середине февраля и длится три месяца
+                </p>
+              </li>
+              <li class="list__item">
+                <div class="list__dash"></div>
+                <p class="text">
+                  В неделю будете тратить около 2-3 часов на лекции и столько,
+                  сколько сочтете нужным, на домашнюю работу
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="card">
+            <h1 class="card__title">Интерактив и нетворкинг</h1>
+            <ul class="list">
+              <li class="list__item">
+                <div class="list__dash"></div>
+                <p class="text">
+                  Вы сможете задавать вопросы преподавателям во время лекции в
+                  Зуме или в общем чате
+                </p>
+              </li>
+              <li class="list__item">
+                <div class="list__dash"></div>
+                <p class="text">
+                  Обсуждать материалы и домашки вместе с сокурсниками. Это
+                  поможет найти новый профессиональный круг общения
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section -->
+    <section class="section hidden">
+      <div class="section__wrapper container">
+        <h1 class="section__title">Бесплатное обучение</h1>
+        <div class="section__container grid grid-cols-2">
+          <div class="card">
+            <img
+              class="card__icon"
+              src="./assets/icons/academic.svg"
+              alt="academic" />
+            <h1 class="card__title">
+              Каждый студент проходит тщательный отбор
+            </h1>
+            <ul class="list">
+              <li class="list__item">
+                <div class="list__dash"></div>
+                <p class="text">
+                  Пройдите экзамен и заполните анкету, которая выполняет функцию
+                  портфолио
+                </p>
+              </li>
+              <li class="list__item">
+                <div class="list__dash"></div>
+                <p class="text">
+                  Расскажите подробно о своем опыте: сильное портфолио влияет на
+                  решение
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="card">
+            <img class="card__icon" src="./assets/icons/doc.svg" alt="doc" />
+            <h1 class="card__title">Одинаковые условия для всех</h1>
+            <ul class="list">
+              <li class="list__item">
+                <div class="list__dash"></div>
+                <p class="text">
+                  Чтобы успешно закончить курс, нужно выполнить обязательные
+                  домашние задания и защитить проект
+                </p>
+              </li>
+              <li class="list__item">
+                <div class="list__dash"></div>
+                <p class="text">
+                  После обучения выдаем сертификат, подтверждающий,что вы
+                  освоили теорию и навыки веб-разработки
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section -->
+    <section class="section hidden">
+      <div class="section__wrapper container">
+        <h1 class="section__title">Как попасть на курс</h1>
+        <div class="section__container grid grid-cols-4 pt-16">
+          <div class="card">
+            <div class="card__number">1</div>
+            <div class="card__text text-center">
+              Оставьте заявку онлайн и зарегистрируйтесь на сайте
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__number">2</div>
+            <div class="card__text text-center">
+              Расскажите в анкете, почему хотите изучить веб-разработку
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__number">3</div>
+            <div class="card__text text-center">
+              Пройдите экзамен: решите несколько задач по программированию
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__number">4</div>
+            <div class="card__text text-center">
+              Дождитесь письма об итогах отбора. Начните учиться
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section -->
+    <section id="scroll" class="section pt-12 hidden">
+      <div class="section__wrapper container">
+        <div class="section__container grid grid-full">
+          <div class="card card--shadow">
+            <div class="form">
+              <h1 class="form__title">Подать заявку</h1>
+
+              <div id="select" class="form__control">
+                <input
+                  autocomplete="off"
+                  placeholder=" "
+                  value=""
+                  type="text"
+                  name="city"
+                  disabled
+                  id="city" />
+                <svg
+                  width="24"
+                  height="24"
+                  class="form__clear"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="{1.5}"
+                  stroke="currentColor">
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M6 18L18 6M6 6l12 12" />
+                </svg>
+                <label id="label" for="city">Город</label>
+                <div id="dropdown" class="dropdown hide">
+                  <ul class="dropdown__list">
+                    <li class="dropdown__list-item">Москва</li>
+                    <li class="dropdown__list-item">Санкт-Петербург</li>
+                    <li class="dropdown__list-item">Рязань</li>
+                    <li class="dropdown__list-item">Екатеринбург</li>
+                    <li class="dropdown__list-item">Ростов-на-Дону</li>
+                    <li class="dropdown__list-item">Казань</li>
+                    <li class="dropdown__list-item">Новосибирск</li>
+                    <li class="dropdown__list-item">Самара</li>
+                  </ul>
+                </div>
+
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  class="form__arrow"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M7.70711 9.29289C7.31658 8.90237 6.68342 8.90237 6.29289 9.29289C5.90237 9.68342 5.90237 10.3166 6.29289 10.7071L10.5871 15.0013C11.368 15.7823 12.63 15.7842 13.4129 15.0013L17.7071 10.7071C18.0976 10.3166 18.0976 9.68342 17.7071 9.29289C17.3166 8.90237 16.6834 8.90237 16.2929 9.29289L12 13.5858L7.70711 9.29289Z"
+                    fill="#9299A2" />
+                </svg>
+              </div>
+              <p class="form__text form__text--invalid">Поле обязательное</p>
+
+              <div id="nameInput" class="form__control">
+                <input
+                  autocomplete="off"
+                  placeholder=" "
+                  type="text"
+                  name="name"
+                  id="name" />
+                <label for="name">Фамилия и имя</label>
+              </div>
+              <p class="form__text form__text--invalid">Поле обязательное</p>
+              <div class="form__actions">
+                <div class="form__container">
+                  <input checked id="check" class="hide" type="checkbox" />
+                  <label for="check" class="form__checkbox"></label>
+                  <p class="form__text">
+                    Я согласен с
+                    <a href="/">условиями передачи информации</a>
+                  </p>
+                </div>
+                <button id="send" class="btn">Отправить</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer hidden container">
+      <p class="footer__text">&copy; 2022 «Тинькофф Образование»</p>
+      <p class="footer__text">
+        По вопросам пишите на
+        <a class="footer__link" href="mailto:edu@tinkoff.ru">edu@tinkoff.ru</a>
+      </p>
+    </footer>
+
     <script type="module" src="./main.js"></script>
   </body>
 </html>
