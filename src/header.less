@@ -1,0 +1,109 @@
+.header {
+  background-color: var(--base-01);
+  filter: drop-shadow(0px 4px 24px rgba(0, 0, 0, 0.12));
+}
+
+.header-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.logo {
+  display: block;
+  height: 34px;
+  width: 150px;
+  margin-right: 48px;
+  background-image: url('https://www.cdn-tinkoff.ru/frontend-libraries/pfcore-static-assets/logos/main-logo.svg');
+}
+
+.navigation {
+  flex: 1 0;
+  height: 64px;
+
+  &__list {
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+
+    @media @mobile {
+      flex-flow: column nowrap;
+      visibility: hidden;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-right: 24px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    & a {
+      display: inline-flex;
+      align-items: center;
+      height: 100%;
+      color: var(--text-02);
+
+      &:hover {
+        .transition(color);
+        color: var(--text-01);
+      }
+    }
+
+    &_active {
+      .box-shadow(0px, -2px, 0px, var(--base-05), true);
+
+      & a {
+        color: var(--text-01);
+      }
+    }
+  }
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  height: 100%;
+
+  &-btn {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    background: none;
+    border: none;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+
+    &__name {
+      margin-right: 10px;
+      color: var(--text-link);
+      .transition(color, 2s);
+    }
+
+    &__icon {
+      display: flex;
+
+      & svg {
+        fill: var(--text-link);
+        .transition(fill, 2s);
+      }
+    }
+
+    &:hover {
+      & .login-btn__name {
+        color: black;
+      }
+
+      & .login-btn__icon svg {
+        fill: black;
+      }
+    }
+  }
+}
