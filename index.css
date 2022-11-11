@@ -1,0 +1,563 @@
+@import 'src/grids/grid.css';
+@import 'src/main.css';
+@import 'src/footer.css';
+:root {
+  --text-font: 'Roboto', sans-serif;
+  --font-h1: normal 900 44px/48px var(--text-font);
+  --font-h2: normal 900 44px/48px var(--text-font);
+  --font-h4: normal 700 24px/28px var(--text-font);
+  --font-text: normal 400 15px/24px var(--text-font);
+  --font-text-m: normal 800 24px/32px var(--font-text);
+  --font-text-s: var(--font-text);
+  --font-text-xs: normal 400 13px/20px var(--text-font);
+  --radius-l: 24px;
+  --radius-m: 16px;
+  --radius-s: 8px;
+  --radius-xs: 4px;
+  --text-01: rgba(0, 0, 0, 0.8);
+  --text-02: rgba(0, 0, 0, 0.54);
+  --text-link: #336fee;
+  --text-link-hover: #6e87e1;
+  --text-error: #e31c1c;
+  --base-01: #fff;
+  --base-02: #f6f7f8;
+  --base-03: #9299a2;
+  --base-04: #333333;
+  --base-05: #666666;
+  --base-06: rgba(0, 0, 0, 0.2);
+  --primary: #ffdd2d;
+  --primary-hover: #fcc521;
+  --primary-active: #fab619;
+  --error-bg: rgba(224, 31, 25, 0.12);
+  --selection: rgba(112, 182, 246, 0.12);
+}
+html {
+  height: 100%;
+  font-size: 16px;
+}
+body {
+  font: var(--font-text-s);
+  color: var(--text-01);
+  height: 100%;
+  min-height: 100%;
+  background-color: var(--base-02);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+div {
+  box-sizing: border-box;
+}
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  color: var(--text-link);
+  outline: none;
+  text-decoration: none;
+}
+a:hover {
+  transition: color 0.3s 0s ease-in-out;
+  color: var(--text-link-hover);
+}
+img {
+  width: 100%;
+}
+::-moz-selection {
+  background-color: var(--selection);
+}
+::selection {
+  background-color: var(--selection);
+}
+::-ms-clear {
+  display: none;
+}
+::-ms-reveal {
+  display: none;
+}
+.app {
+  display: flex;
+  flex-flow: column nowrap;
+  min-height: 100vh;
+  color: var(--text-01);
+}
+.container {
+  max-width: 1360px;
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: border-box;
+}
+@media screen and (min-width: 1360px) {
+  .container {
+    width: 1104px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 1000px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .container {
+    max-width: 768px;
+    width: 608px;
+    padding: 0 8px;
+  }
+}
+@media screen and (max-width: 599px) {
+  .container {
+    width: 100%;
+    padding: 0 4px;
+  }
+}
+/* 
+  функция генератор колонок
+  свойство показывает сколько колонок занимет данные селектор
+  например: 
+      col_md-4 - элемент займет 4 колонки на десктопе (1/3 часть)
+      col_xs-12 - элемент займет 12 колонок на мобилках(100%)
+      col_sm-6 - элемент займет 6 колонок на планшетах(половину)
+
+  @infix - устройство
+  @n - общее кол-во колонок
+  @padding - внутренние отсупы
+  @i - итерируемый элемент(кастомная реализация loop в less посредством рекурсии)
+*/
+/* 
+  контейнер для строки
+  обязательный контейнер для колонок
+
+
+*/
+.row {
+  display: flex;
+  flex-flow: row wrap;
+}
+@media screen and (max-width: 599px) {
+  .row {
+    margin-left: -4px;
+    margin-right: -4px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1023px) {
+  .row {
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .row {
+    margin-left: -16px;
+    margin-right: -16px;
+  }
+}
+/* 
+  генерация колонок
+  колонки указываются только в строках(.row)
+  @infix устройство на котором будет приминено данной свойство
+  md - по дефолту либо дектопы
+  sm - планшеты
+  xs - мобилки
+*/
+.col_md-12 {
+  width: 100%;
+  padding-left: 24px;
+  padding-right: 24px;
+  box-sizing: border-box;
+}
+.col_md-11 {
+  width: 91.66666667%;
+  padding-left: 24px;
+  padding-right: 24px;
+  box-sizing: border-box;
+}
+.col_md-10 {
+  width: 83.33333333%;
+  padding-left: 24px;
+  padding-right: 24px;
+  box-sizing: border-box;
+}
+.col_md-9 {
+  width: 75%;
+  padding-left: 24px;
+  padding-right: 24px;
+  box-sizing: border-box;
+}
+.col_md-8 {
+  width: 66.66666667%;
+  padding-left: 24px;
+  padding-right: 24px;
+  box-sizing: border-box;
+}
+.col_md-7 {
+  width: 58.33333333%;
+  padding-left: 24px;
+  padding-right: 24px;
+  box-sizing: border-box;
+}
+.col_md-6 {
+  width: 50%;
+  padding-left: 24px;
+  padding-right: 24px;
+  box-sizing: border-box;
+}
+.col_md-5 {
+  width: 41.66666667%;
+  padding-left: 24px;
+  padding-right: 24px;
+  box-sizing: border-box;
+}
+.col_md-4 {
+  width: 33.33333333%;
+  padding-left: 24px;
+  padding-right: 24px;
+  box-sizing: border-box;
+}
+.col_md-3 {
+  width: 25%;
+  padding-left: 24px;
+  padding-right: 24px;
+  box-sizing: border-box;
+}
+.col_md-2 {
+  width: 16.66666667%;
+  padding-left: 24px;
+  padding-right: 24px;
+  box-sizing: border-box;
+}
+.col_md-1 {
+  width: 8.33333333%;
+  padding-left: 24px;
+  padding-right: 24px;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 599px) {
+  .col_xs-12 {
+    width: 100%;
+    padding-left: 4px;
+    padding-right: 4px;
+    box-sizing: border-box;
+  }
+  .col_xs-11 {
+    width: 91.66666667%;
+    padding-left: 4px;
+    padding-right: 4px;
+    box-sizing: border-box;
+  }
+  .col_xs-10 {
+    width: 83.33333333%;
+    padding-left: 4px;
+    padding-right: 4px;
+    box-sizing: border-box;
+  }
+  .col_xs-9 {
+    width: 75%;
+    padding-left: 4px;
+    padding-right: 4px;
+    box-sizing: border-box;
+  }
+  .col_xs-8 {
+    width: 66.66666667%;
+    padding-left: 4px;
+    padding-right: 4px;
+    box-sizing: border-box;
+  }
+  .col_xs-7 {
+    width: 58.33333333%;
+    padding-left: 4px;
+    padding-right: 4px;
+    box-sizing: border-box;
+  }
+  .col_xs-6 {
+    width: 50%;
+    padding-left: 4px;
+    padding-right: 4px;
+    box-sizing: border-box;
+  }
+  .col_xs-5 {
+    width: 41.66666667%;
+    padding-left: 4px;
+    padding-right: 4px;
+    box-sizing: border-box;
+  }
+  .col_xs-4 {
+    width: 33.33333333%;
+    padding-left: 4px;
+    padding-right: 4px;
+    box-sizing: border-box;
+  }
+  .col_xs-3 {
+    width: 25%;
+    padding-left: 4px;
+    padding-right: 4px;
+    box-sizing: border-box;
+  }
+  .col_xs-2 {
+    width: 16.66666667%;
+    padding-left: 4px;
+    padding-right: 4px;
+    box-sizing: border-box;
+  }
+  .col_xs-1 {
+    width: 8.33333333%;
+    padding-left: 4px;
+    padding-right: 4px;
+    box-sizing: border-box;
+  }
+}
+@media (min-width: 600px) and (max-width: 1023px) {
+  .col_sm-12 {
+    width: 100%;
+    padding-left: 8px;
+    padding-right: 8px;
+    box-sizing: border-box;
+  }
+  .col_sm-11 {
+    width: 91.66666667%;
+    padding-left: 8px;
+    padding-right: 8px;
+    box-sizing: border-box;
+  }
+  .col_sm-10 {
+    width: 83.33333333%;
+    padding-left: 8px;
+    padding-right: 8px;
+    box-sizing: border-box;
+  }
+  .col_sm-9 {
+    width: 75%;
+    padding-left: 8px;
+    padding-right: 8px;
+    box-sizing: border-box;
+  }
+  .col_sm-8 {
+    width: 66.66666667%;
+    padding-left: 8px;
+    padding-right: 8px;
+    box-sizing: border-box;
+  }
+  .col_sm-7 {
+    width: 58.33333333%;
+    padding-left: 8px;
+    padding-right: 8px;
+    box-sizing: border-box;
+  }
+  .col_sm-6 {
+    width: 50%;
+    padding-left: 8px;
+    padding-right: 8px;
+    box-sizing: border-box;
+  }
+  .col_sm-5 {
+    width: 41.66666667%;
+    padding-left: 8px;
+    padding-right: 8px;
+    box-sizing: border-box;
+  }
+  .col_sm-4 {
+    width: 33.33333333%;
+    padding-left: 8px;
+    padding-right: 8px;
+    box-sizing: border-box;
+  }
+  .col_sm-3 {
+    width: 25%;
+    padding-left: 8px;
+    padding-right: 8px;
+    box-sizing: border-box;
+  }
+  .col_sm-2 {
+    width: 16.66666667%;
+    padding-left: 8px;
+    padding-right: 8px;
+    box-sizing: border-box;
+  }
+  .col_sm-1 {
+    width: 8.33333333%;
+    padding-left: 8px;
+    padding-right: 8px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .col_md-12 {
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
+  }
+  .col_md-11 {
+    width: 91.66666667%;
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
+  }
+  .col_md-10 {
+    width: 83.33333333%;
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
+  }
+  .col_md-9 {
+    width: 75%;
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
+  }
+  .col_md-8 {
+    width: 66.66666667%;
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
+  }
+  .col_md-7 {
+    width: 58.33333333%;
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
+  }
+  .col_md-6 {
+    width: 50%;
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
+  }
+  .col_md-5 {
+    width: 41.66666667%;
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
+  }
+  .col_md-4 {
+    width: 33.33333333%;
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
+  }
+  .col_md-3 {
+    width: 25%;
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
+  }
+  .col_md-2 {
+    width: 16.66666667%;
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
+  }
+  .col_md-1 {
+    width: 8.33333333%;
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
+  }
+}
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 36px;
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  background-color: var(--primary);
+  border-radius: var(--radius-s);
+}
+.header {
+  background-color: var(--base-01);
+  filter: drop-shadow(0px 4px 24px rgba(0, 0, 0, 0.12));
+}
+.header-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.logo {
+  display: block;
+  height: 34px;
+  width: 150px;
+  margin-right: 48px;
+  background-image: url('https://www.cdn-tinkoff.ru/frontend-libraries/pfcore-static-assets/logos/main-logo.svg');
+}
+.navigation {
+  flex: 1 0;
+  height: 64px;
+}
+.navigation__list {
+  height: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+}
+@media screen and (max-width: 599px) {
+  .navigation__list {
+    flex-flow: column nowrap;
+    visibility: hidden;
+  }
+}
+.navigation__link {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-right: 24px;
+}
+.navigation__link:last-child {
+  margin-right: 0;
+}
+.navigation__link a {
+  display: inline-flex;
+  align-items: center;
+  height: 100%;
+  color: var(--text-02);
+}
+.navigation__link a:hover {
+  transition: color 0.3s 0s ease-in-out;
+  color: var(--text-01);
+}
+.navigation__link_active {
+  box-shadow: inset 0px -2px 0px 0 var(--base-05);
+}
+.navigation__link_active a {
+  color: var(--text-01);
+}
+.login {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.login-btn {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+.login-btn__name {
+  margin-right: 10px;
+  color: var(--text-link);
+  transition: color 2s 0s ease-in-out;
+}
+.login-btn__icon {
+  display: flex;
+}
+.login-btn__icon svg {
+  fill: var(--text-link);
+  transition: fill 2s 0s ease-in-out;
+}
+.login-btn:hover .login-btn__name {
+  color: black;
+}
+.login-btn:hover .login-btn__icon svg {
+  fill: black;
+}

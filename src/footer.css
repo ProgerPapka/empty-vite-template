@@ -1,0 +1,49 @@
+.footer {
+  padding: 20px 0 24px 0;
+  border-top: 1px solid #e7e8ea;
+}
+
+.copyright {
+  font-family: var(--text-font);
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  color: var(--text-02);
+}
+
+.contact {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.contact__address {
+  font-family: var(--text-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  color: var(--text-02);
+}
+
+/* если открыто на мобилках то переписываем некоторые стили */
+@media screen and (max-width: 599px) {
+  .footer {
+    padding: 20px 0 24px 0;
+    border-top: 1px solid #e7e8ea;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .footer > .copyright {
+    display: flex;
+    justify-content: center;
+    order: 2;
+  }
+
+  .footer > .contact {
+    display: flex;
+    justify-content: center;
+    order: 1;
+    margin-bottom: 8px;
+  }
+}

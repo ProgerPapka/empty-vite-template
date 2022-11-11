@@ -1,0 +1,77 @@
+@import "./utils/media.less";
+@import "./utils/text.less";
+
+.title {
+  .text-h2();
+  display: flex;
+  justify-content: center;
+  margin-bottom: 48px;
+  margin-top: 48px;
+}
+
+.type-list{
+  list-style-type: "\2014\A0";
+  margin-left: 48px;
+}
+
+.centered_button{
+  display: flex;
+  justify-content: center;
+  margin-top: 56px;
+  margin-bottom: 80px;
+}
+
+.number_block{
+  display: flex;
+  position: relative;
+  bottom: 60px; 
+  margin: auto;
+  border-radius: var(--radius-s);
+}
+
+.icon{
+  margin-bottom: 44px;
+}
+
+.block {
+  display: flex;
+  flex-flow: column nowrap;
+  height: 100%;
+  padding: 32px;
+  border-radius: var(--radius-s);
+  background-color: var(--base-01);
+
+  &__title {
+    .text-h4();
+    align-self: flex-start;
+  }
+
+  &__info {
+    .text-basic();
+    margin: 0;
+  }
+  
+  &__info1 {
+    .text-basic(); 
+    text-align: center;
+    position: relative;
+    bottom: 30px; 
+    margin: 0;
+  }
+
+  &__info2{
+    .text-basic();
+    display: flex;
+    justify-content: center;       
+  }
+}
+
+*:has(.block) {
+  @media @mobile {
+    margin-bottom: 24px;
+  }
+
+  @media @tablet {
+    margin-bottom: 24px;
+  }
+}
