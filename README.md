@@ -1,12 +1,12 @@
 # Empty vite template
 
 Предварительно должны быть установлены git и nodejs(версия lts 16 и выше)
+
 - install node.js v16>(npm v7.x>) (https://nodejs.org/en/download/)
 - install git(https://git-scm.com/downloads)
 
-
-
 Далее:
+
 - Скачиваем проект к себе. Есть 3 способа:
   - Сачиваем проект как архив и разархивирем где удобно
   - Открываем терминал в нужной дириктории. `git clone 'https://github.com/ProgerPapka/empty-vite-template.git'` Проект склонировался и далее переходим в папку проекта. И последний штрих удаляем папку `.git` - это нужно чтобы вы создали свой гит репозиторий
