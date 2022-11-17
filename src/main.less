@@ -1,0 +1,36 @@
+.title {
+  .text-h2();
+  display: flex;
+  justify-content: center;
+  margin-bottom: 48px;
+  margin-top: 48px;
+}
+
+.block {
+  display: flex;
+  flex-flow: column nowrap;
+  height: 100%;
+  padding: 32px;
+  border-radius: var(--radius-s);
+  background-color: var(--base-01);
+
+  &__title {
+    .text-h4();
+    align-self: flex-start;
+  }
+
+  &__info {
+    .text-basic();
+    margin: 0;
+  }
+}
+
+*:has(.block) {
+  @media @mobile {
+    margin-bottom: 24px;
+  }
+
+  @media @tablet {
+    margin-bottom: 24px;
+  }
+}
