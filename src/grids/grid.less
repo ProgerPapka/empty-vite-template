@@ -1,0 +1,40 @@
+// тоже самое что в grid.css, только на less
+.generate-grid(@n, @i: 1) when (@i =< @n) {
+  .generate-grid(@n, (@i + 1));
+
+  &-col-@{i} {
+    grid-template-columns: repeat(@i, minmax(0, 1fr));
+  }
+
+  & when (@i =< (@n/2)) {
+    &-row-@{i} {
+      grid-template-rows: repeat(@i, minmax(0, 1fr));
+    }
+  }
+}
+
+.generate-grid-col-span(@n, @i: 1) when (@i =< @n) {
+  .generate-grid-col-span(@n, (@i + 1));
+
+  col-span-@{i} {
+    grid-column: span @i / span @i;
+  }
+}
+
+.generate-grid-row-span(@n, @i: 1) when (@i =< @n) {
+  .generate-grid-row-span(@n, (@i + 1));
+
+  row-span-@{i} {
+    grid-row: span @i / span @i;
+  }
+}
+
+// TODO: можно дописать чтобы можно было приминять для разных экранов(как флексы)
+.grid {
+  .generate-grid(12);
+
+  display: grid;
+}
+
+.generate-grid-col-span(12);
+.generate-grid-row-span(6);
