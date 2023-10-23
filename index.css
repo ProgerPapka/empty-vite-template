@@ -1,0 +1,12 @@
+:root {
+  --background-color: #f6f7f8;
+}
+body {
+  background-color: var(--background-color);
+}
+
+.logo {
+  height: 34px;
+  width: 151px;
+  background-image: url('https://www.cdn-tinkoff.ru/frontend-libraries/pfcore-static-assets/logos/main-logo.svg');
+}
