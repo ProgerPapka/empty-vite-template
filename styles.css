@@ -98,7 +98,7 @@ body {
 }
 
 .login-btn a::after {
-    content: url('t_picture6.png');
+    content: url('assets/icons/login.svg');
     margin-right: 10px;
     display: inline-block;
 }
