@@ -1,0 +1,54 @@
+.content1 {
+  display: flex;
+  height: 812px;
+  padding: 40px 128px;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+
+  &__textblock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+
+    &__text {
+      display: flex;
+      width: 912px;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+    }
+  }
+
+  & button {
+    width: 150px;
+    height: 56px;
+
+    background: #ffdd2d;
+    border-radius: 8px;
+
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: rgba(0, 0, 0, 0.8);
+
+    border: 0;
+
+    &:hover {
+      background: #fcc521;
+      transition: 300ms;
+      cursor: pointer;
+    }
+
+    &:active {
+      background: #fab619;
+      transition: 300ms;
+      cursor: pointer;
+    }
+
+    &:focus {
+      border: 2px solid rgba(51, 51, 51, 0.48);
+    }
+  }
+}
