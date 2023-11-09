@@ -1,0 +1,66 @@
+.content2 {
+  height: 556px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    display: flex;
+    width: 1360px;
+    padding: 76px 224px 24px 224px;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  &__info {
+    display: flex;
+    padding: 24px 128px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 43px;
+
+    &__img {
+      width: 720px;
+      height: 360px;
+      border-radius: 24px;
+      background-color: #ffffff;
+    }
+
+    &__text {
+      margin-top: 48px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 24px;
+      align-self: stretch;
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        list-style-type: none;
+
+        & li {
+          width: 316px;
+          color: var(--day-text-text-01, rgba(0, 0, 0, 0.8));
+          font-family: Roboto;
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px;
+
+          padding-left: 1.6rem;
+          background-image: url(/assets/icons/bullit.svg);
+          background-position: 0 0;
+          background-size: 1.6rem 1.6rem;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+  }
+}
