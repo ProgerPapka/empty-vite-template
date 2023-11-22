@@ -1,0 +1,46 @@
+.steps-to-enter {
+  &__title {
+    @include heading-1;
+
+    text-align: center;
+  }
+
+  &__content {
+    margin-top: 24px;
+    padding: 24px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 48px;
+  }
+
+  .item {
+    position: relative;
+    padding: 56px 32px 32px 32px;
+    background-color: $bg-secondary;
+    border-radius: 24px;
+
+    &__counter {
+      position: absolute;
+      width: 56px;
+      height: 56px;
+      left: 50%;
+      top: -28px;
+      transform: translateX(-50%);
+      background-color: #333;
+      color: #fff;
+      border-radius: 16px;
+      text-align: center;
+      font-feature-settings: 'liga' off;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 56px;
+    }
+
+    &__text {
+      @include paragraph-1;
+
+      text-align: center;
+    }
+  }
+}

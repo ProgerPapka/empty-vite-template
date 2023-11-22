@@ -1,0 +1,19 @@
+.about-section {
+  &__title {
+    @include heading-1;
+
+    text-align: center;
+  }
+
+  &__info {
+    margin-top: 48px;
+    display: flex;
+    column-gap: 48px;
+  }
+
+  &__decoration {
+    background-color: $bg-secondary;
+    border-radius: 10px;
+    max-width: 720px;
+  }
+}

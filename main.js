@@ -1,2 +1,2 @@
 import 'normalize.css';
-import './index.less';
+import './src/styles/index.scss';

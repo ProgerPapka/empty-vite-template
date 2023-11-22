@@ -1,0 +1,36 @@
+.free-education {
+  &__title {
+    @include heading-1;
+
+    text-align: center;
+  }
+
+  &__content {
+    margin-top: 24px;
+    padding: 24px 0;
+    display: flex;
+    column-gap: 48px;
+  }
+
+  .item {
+    flex: 1;
+    padding: 32px;
+    background-color: $bg-secondary;
+    border-radius: 24px;
+
+    &__icon {
+      width: 36px;
+      height: 36px;
+    }
+
+    &__subtitle {
+      @include heading-2;
+
+      margin-top: 44px;
+    }
+  }
+
+  &__list {
+    margin-top: 12px;
+  }
+}

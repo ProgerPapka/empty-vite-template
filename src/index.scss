@@ -1,0 +1,82 @@
+@import './utils/vars';
+@import './utils/mixins';
+
+@import './header';
+@import './promo';
+@import './about';
+@import './course-description';
+@import './education';
+@import './free-education';
+@import './steps-to-enter';
+@import './footer';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.container {
+  max-width: 1124px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.main {
+  padding: 40px 0 128px 0;
+  background-color: $bg-primary;
+}
+
+.section + .section {
+  margin-top: 76px;
+}
+
+.list {
+  list-style-type: none;
+  margin-left: 12px;
+
+  &__item {
+    @include paragraph-1;
+
+    position: relative;
+    padding-left: 8px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: -14px;
+      width: 12px;
+      height: 24px;
+      background-image: url('../../assets/icons/list-indent.svg');
+      background-position: center center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.list__item + .list__item {
+  margin-top: 12px;
+}

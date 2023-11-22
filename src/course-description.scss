@@ -1,0 +1,32 @@
+.course-description {
+  &__title {
+    @include heading-1;
+
+    text-align: center;
+  }
+
+  &__content {
+    margin-top: 24px;
+    padding: 24px 0;
+    list-style-type: none;
+    display: flex;
+    column-gap: 48px;
+  }
+
+  .content-item {
+    flex: 1;
+    padding: 32px;
+    background-color: $bg-secondary;
+    border-radius: 24px;
+
+    &__title {
+      @include heading-2;
+    }
+
+    &__text {
+      @include paragraph-1;
+
+      margin-top: 16px;
+    }
+  }
+}

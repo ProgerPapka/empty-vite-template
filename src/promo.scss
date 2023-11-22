@@ -1,0 +1,29 @@
+.promo-section {
+  padding: 40px 0;
+
+  &__title {
+    @include heading-1;
+
+    text-align: center;
+  }
+
+  &__subtitle {
+    @include paragraph-1;
+
+    display: block;
+    margin-top: 24px;
+    text-align: center;
+  }
+
+  &__btn {
+    @include btn-base;
+
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+
+  &__decoration {
+    margin-top: 64px;
+  }
+}

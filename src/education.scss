@@ -1,0 +1,29 @@
+.education-section {
+  &__title {
+    @include heading-1;
+
+    text-align: center;
+  }
+
+  &__content {
+    margin-top: 24px;
+    padding: 24px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 48px;
+
+    &-item {
+      padding: 32px;
+      border-radius: 24px;
+      background-color: $bg-secondary;
+    }
+  }
+
+  &__list {
+    margin-top: 12px;
+  }
+
+  &__subtitle {
+    @include heading-2;
+  }
+}
