@@ -1,0 +1,29 @@
+@import "src/utils/animation";
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 36px;
+  border: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  background: var(--primary) none;
+  border-radius: var(--radius-s);
+  margin-bottom: 64px;
+  .transition(background, 0.3s);
+
+  &:hover {
+    background: var(--primary-hover);
+  }
+
+  &:active {
+    background: var(--primary-active);
+  }
+
+  &:focus {
+    outline-color: var(--text-01);
+  }
+}

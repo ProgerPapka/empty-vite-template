@@ -1,0 +1,82 @@
+@import "src/utils/text";
+@import "src/utils/media";
+
+.title {
+  .text-h2();
+  display: flex;
+  justify-content: center;
+  margin-bottom: 48px;
+  margin-top: 48px;
+}
+
+.block {
+  display: flex;
+  flex-flow: column nowrap;
+  height: 100%;
+  padding: 32px;
+  border-radius: var(--radius-l);
+  background-color: var(--base-01);
+  position: relative;
+
+  &__title {
+    .text-h4();
+    align-self: flex-start;
+  }
+
+  &__info {
+    .text-basic();
+    margin: 0;
+  }
+
+  &__number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    color: white;
+    border-radius: var(--radius-m);
+    font-size: 24px;
+    position: relative;
+    bottom: 56px;
+    width: 56px;
+    height: 56px;
+    background: var(--base-04);
+  }
+}
+
+*:has(.block) {
+  @media @mobile {
+    margin-bottom: 24px;
+  }
+
+  @media @tablet {
+    margin-bottom: 24px;
+  }
+}
+
+.list {
+  list-style: url("/assets/icons/rectangle.svg") inside;
+
+  li {
+    margin-bottom: 12px;
+  }
+
+  :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+}
+
+.firstTitle {
+  margin-bottom: 12px;
+}
+
+.icon {
+  width: 36px;
+  height: 36px;
+  margin-bottom: 44px
+}
