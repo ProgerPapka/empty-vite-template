@@ -1,0 +1,57 @@
+.generate-columns(@infix, @n, @padding, @i: 1) when (@i =< @n) {
+  .generate-columns(@infix, @n, @padding, (@i + 1));
+
+  &_@{infix}-@{i} {
+    width: (@i * 100% / @n);
+    padding-left: @padding;
+    padding-right: @padding;
+    box-sizing: border-box;
+  }
+
+  & when (@infix) {
+    .generate-columns(@n, @padding, (@i + 1));
+
+    &_@{i} {
+      width: (@i * 100% / @n);
+      padding-left: @padding;
+      padding-right: @padding;
+      box-sizing: border-box;
+    }
+  }
+}
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+
+  @media @mobile {
+    margin-left: -4px;
+    margin-right: -4px;
+  }
+
+  @media @tablet-interval {
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+
+  @media @desktop-min {
+    margin-left: -16px;
+    margin-right: -16px;
+  }
+}
+
+.col {
+  .generate-columns(md, 12, 24px);
+
+  @media @mobile {
+    .generate-columns(xs, 12, 4px);
+  }
+
+  @media @tablet-interval {
+    .generate-columns(sm, 12, 8px);
+  }
+
+  @media @desktop-min {
+    .generate-columns(md, 12, 16px);
+  }
+}
