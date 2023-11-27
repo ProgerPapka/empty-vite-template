@@ -1,0 +1,31 @@
+:root {
+  --text-font: 'Roboto', sans-serif;
+  --font-h1: normal 900 44px/48px var(--text-font);
+  --font-h2: normal 900 44px/48px var(--text-font);
+  --font-h4: normal 700 24px/28px var(--text-font);
+  --font-text: normal 400 15px/24px var(--text-font);
+  --font-text-m: normal 800 24px/32px var(--font-text);
+  --font-text-s: var(--font-text);
+  --font-text-xs: normal 400 13px/20px var(--text-font);
+  --radius-l: 24px;
+  --radius-m: 16px;
+  --radius-s: 8px;
+  --radius-xs: 4px;
+  --text-01: rgba(0, 0, 0, 0.8);
+  --text-02: rgba(0, 0, 0, 0.54);
+  --text-link: #336fee;
+  --text-link-hover: #6e87e1;
+  --text-error: #e31c1c;
+  --base-01: #fff;
+  --base-02: #f6f7f8;
+  --base-03: #9299a2;
+  --base-04: #333333;
+  --base-05: #666666;
+  --base-06: rgba(0, 0, 0, 0.2);
+  --primary: #ffdd2d;
+  --primary-hover: #fcc521;
+  --primary-active: #fab619;
+  --primary-focus: rgba(51, 51, 51, 0.48);
+  --error-bg: rgba(224, 31, 25, 0.12);
+  --selection: rgba(112, 182, 246, 0.12);
+}
