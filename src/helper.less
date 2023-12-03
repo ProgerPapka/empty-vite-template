@@ -1,7 +1,36 @@
 @white: #fff;
 
 .login-icon {
-  width: 24px;
-  height: 24px;
-  background-image: url('/assets/icons/login.svg');
+  margin-left: 8px;
+  fill: #336FEE;
+  transition: .3s ease-in-out;
+}
+
+
+.input {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  text-decoration: none;
+}
+
+.input:hover .login-icon {
+  fill: #000000CC;
+}
+
+.input:hover .input-text {
+  color: #000000CC;
+}
+
+.input-box {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.input-text {
+  font: 400 13px/20px Roboto;
+  letter-spacing: 0;
+  transition: .3s ease-in-out;
 }
