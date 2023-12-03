@@ -1,0 +1,473 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #F6F7F8;
+    color: rgba(0, 0, 0, 0.80);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+h2 {
+    color: var(--day-text-text-01);
+    text-align: center;
+    font-feature-settings: "liga" off;
+    font-family: Roboto;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 48px;
+  }
+  
+  h3 {
+    color: var(--day-text-text-01);
+    font-feature-settings: "liga" off;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+  }
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 64px;
+    background-color: white;
+    box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.12)
+}
+
+.header_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1104px;
+}
+
+.header_left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 583px;
+}
+
+.header_label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 151px;
+    height: 34px;
+}
+
+.header_tabs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 384px;
+}
+
+
+.header_tab {
+    color: rgba(0, 0, 0, 0.54);
+    font-family: Roboto;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.header_tab--active {
+    color: rgba(0, 0, 0, 0.80);
+    font-family: Roboto;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.header_tab:hover {
+  box-shadow: 0px -2px 0px 0px #666 inset;
+}
+
+.header_right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 69px;
+    cursor: pointer;
+}
+
+.header_loggedOut {
+    color: #336FEE;
+    text-align: right;
+    font-family: Roboto;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+/* hero section */
+.hero {
+    display: flex;
+    height: 852px;
+    padding: 80px 128px 40px 128px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.frontend {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 192px;
+    width: 912px;
+    gap: 40px;
+}
+
+.frontend_textBlock {
+    display:flex;
+    width:912px;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-between;
+    height:96px;
+    gap: 24px;
+}
+
+.button {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background: #FFDD2D;
+    width: 150px;
+    height: 56px;
+    padding: 16px 36px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+    gap: 16px;
+}
+
+.button_text {
+    color: rgba(0, 0, 0, 0.80);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.button:hover {
+    background : #FCC521;   
+}
+.button:active {
+    background: #FAB619;
+}
+.button:focus {
+    border: 2px solid rgba(51, 51, 51, 0.48);
+    outline: none;
+}
+
+/* sutiable Section */
+
+.suitableSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 556px;
+    justify-content: space-between;
+  }
+  
+  .suitableSection_title {
+    display: flex;
+    padding: 76px 224px 24px 224px;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .bottomSuitable {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1360px;
+    height: 408px;
+    padding: 24px 128px 24px 128px;
+  }
+  
+  .bottomSuitable_imageAndText {
+    width: 1104px;
+    height: 360px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .bottomSuitable_items {
+    display: flex;
+    width: 341px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 48px 0px 168px;
+  }
+  
+  .bottomSuitable_item {
+    display: flex;
+    width: 336px;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .bottomSuitable_text {
+    width: 316px;
+    flex-shrink: 0;
+    text-align: left;
+  }
+
+  /* courseSection */
+  
+  .courseSection {
+    height: 428px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .courseSection_title {
+    width: 1360px;
+    height: 148px;
+    padding: 76px 224px 24px 224px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .courseSection_vacancies {
+    width: 1360px;
+    height: 280px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 128px 24px 128px;
+  }
+
+  .vacancy {
+    width: 336px;
+    height: 232px;
+    padding: 32px;
+    border-radius: 24px;
+    background: #FFF;
+  }
+
+  .vacancy_data {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .vacancy_info {
+    margin-top: 16px;
+  }
+
+  .educationSection {
+    height: 408px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .educationSection_title {
+    padding: 76px 224px 24px 224px;
+  }
+
+  .educationSection_cards {
+    display: flex;
+    width: 1360px;
+    padding: 24px 128px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .card {
+    background: #FFF;
+    width: 528px;
+    height: 212px;
+    padding: 32px;
+    border-radius: 24px;
+  }
+
+  .card_textBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 464px;
+    text-align: left;
+  }
+
+  .card_item {
+    display: flex;
+    width: 464px;
+    align-items: flex-start;
+    margin-top: 12px;
+  }
+
+  .card_text {
+    width: 444px;
+    margin-left: 8px;
+  }
+
+  /* priceSection */
+
+  .priceSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .priceSection_title {
+    display: flex;
+    width: 1360px;
+    padding: 76px 224px 24px 224px;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .priceSection_blocks {
+    display: flex;
+    padding: 24px 128px;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+  }
+
+  .cardPrice {
+    display: flex;
+    height: 320px;
+    padding: 32px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 44px;
+    border-radius: 24px;
+    background: #FFF;
+  }
+
+  /* enterSection */
+
+  .enterSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 384px;
+  }
+
+  .enterSection_title {
+    display: flex;
+    padding: 76px 224px 24px 224px;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .enterSection_blocks {
+    display:flex;
+    padding: 24px 128px;
+    gap: 48px;
+    width: 1360px;
+    height: 236px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .block {
+    width: 240px;
+    height: 188px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .block_text {
+    display: flex;
+    padding: 56px 32px 32px 32px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 240px;
+    height: 160px;
+    border-radius: 24px;
+    background: #FFF;
+    position: relative;
+    top: -35px;
+    z-index: -1;
+  }
+
+  /* footer */
+
+  .footer {
+    display: flex;
+    justify-content: center;
+    height: 192px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer_rectangle {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer_text {
+    width: 1104px;
+    height: 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer_author {
+    font-family: "Roboto";
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.54);
+  }
+
+  .footer_questions {
+    font-family: "Roboto";
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: right;
+    color: rgba(0, 0, 0, 0.54);
+  }
+
+  .footer_questions span {
+    color: rgba(51, 111, 238, 1);
+  }
