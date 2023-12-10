@@ -14,11 +14,165 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Тинькофф Образование</title>
   </head>
-  <body>
-    <div class="logo"></div>
-    <div class="login-icon"></div>
-    <img src="/assets/images/frontend.png" alt="Фронтенд технологии" />
-    <h1>Frontend-разработчик</h1>
+  <body> 
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <img src="https://www.cdn-tinkoff.ru/frontend-libraries/pfcore-static-assets/logos/main-logo.svg" alt="tinkoff_logo" class="header__logo">
+
+          <nav class="header__nav">
+            <ul class="header__links">
+              <li>
+                <a href="#" class="header__link header__link_active">Финтех курсы</a>
+              </li>
+              <li>
+                <a href="#" class="header__link">Стажировки</a>
+              </li>
+              <li>
+                <a href="#" class="header__link">Мероприятия</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <a href="#" class="header__login">
+          Войти
+          <img src="/assets/icons/login.svg" alt="login_icon">
+        </a>
+      </div>
+    </header>
+
+    <section class="main">
+      <div class="container">
+        <div class="main__information">
+          <h1 class="title">Frontend-разработчик</h1>
+          <p class="main__description">Трехмесячный бесплатный учебный курс от Финтеха, который можно проходить из любой точки России</p>
+          <button class="button">Подробнее</button>
+        </div>
+        <img src="/assets/images/frontend.png" alt="" class="main__banner">
+      </div>
+    </section>
+
+    <section class="audience">
+      <div class="container">
+        <h2 class="title">Кому подойдет курс</h2>
+        
+        <div class="audience__wrapper">
+          <div class="audience__banner"></div>
+
+          <ul class="list list_right">
+            <li class="list__item">Вы студент или выпускник технических вузов</li>
+            <li class="list__item">Хотите научиться создавать интерфейсы</li>
+            <li class="list__item">Хотите познакомиться с современным JavaScript и его фреймворками</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="composion">
+      <div class="container">
+        <h2 class="title">Что вас ждет на курсе</h2>
+
+        <div class="cards-container">
+          <div class="card">
+            <h3 class="card__title">Основы разработки</h3>
+            <p class="card__text">Делимся инструментами, которые позволяют нам создавать <br>веб-продукты для миллионов клиентов</p>
+          </div>
+          <div class="card">
+            <h3 class="card__title">Доступ к учебным материалам онлайн</h3>
+            <p class="card__text">Онлайн-курс с лекциями и домашними заданиями. Вы можете его пройти из любой точки России</p>
+          </div>
+          <div class="card">
+            <h3 class="card__title">Возможность попасть в команду</h3>
+            <p class="card__text">Во время курса участники выполняют много практических заданий. <br>Мы замечаем лучших и приглашаем их на собеседование</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="process">
+      <div class="container">
+        <h2 class="title">Как строится обучение</h2>
+
+        <div class="cards-container">
+          <div class="card">
+            <h3 class="card__title">Онлайн-занятия 1 раз в неделю</h3>
+            <ul class="list">
+              <li class="list__item">Курс стартует в середине февраля и длится три месяца</li>
+              <li class="list__item">В неделю будете тратить около 2-3 часов на лекции и столько, сколько сочтете нужным, на домашнюю работу</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3 class="card__title">Интерактив и нетворкинг</h3>
+            <ul class="list">
+              <li class="list__item">Вы сможете задавать вопросы преподавателям во время лекции в Зуме или в общем чате</li>
+              <li class="list__item">Обсуждать материалы и домашки вместе с сокурсниками. Это поможет найти новый профессиональный круг общения</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="conditions">
+      <div class="container">
+        <h2 class="title">Бесплатное обучение</h2>
+
+        <div class="cards-container">
+          <div class="card">
+            <img src="/assets/icons/academic.svg" alt="academic_icon" class="card__icon">
+            <h3 class="card__title">Каждый студент проходит тщательный отбор</h3>
+            <ul class="list">
+              <li class="list__item">Пройдите экзамен и заполните анкету, которая выполняет функцию портфолио</li>
+              <li class="list__item">Расскажите подробно о своем опыте: сильное портфолио влияет на решение</li>
+            </ul>
+          </div>
+          <div class="card">
+            <img src="/assets/icons/doc.svg" alt="doc_icon" class="card__icon">
+            <h3 class="card__title">Одинаковые условия для всех</h3>
+            <ul class="list">
+              <li class="list__item">Чтобы успешно закончить курс, нужно выполнить обязательные домашние задания и защитить проект</li>
+              <li class="list__item">После обучения выдаем сертификат, подтверждающий,что вы освоили теорию и навыки веб-разработки</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="start">
+      <div class="container">
+        <h2 class="title">Как попасть на курс</h2>
+
+        <div class="cards-container">
+          <div class="card card_numered">
+            <div class="card__number">1</div>
+            <div class="card__text card__text_center">Оставьте заявку онлайн и зарегистрируйтесь на сайте</div>
+          </div>
+          <div class="card card_numered">
+            <div class="card__number">2</div>
+            <div class="card__text card__text_center">Расскажите в анкете, почему хотите изучить веб-разработку</div>
+          </div>
+          <div class="card card_numered">
+            <div class="card__number">3</div>
+            <div class="card__text card__text_center">Пройдите экзамен: решите несколько задач по программированию</div>
+          </div>
+          <div class="card card_numered">
+            <div class="card__number">4</div>
+            <div class="card__text card__text_center">Дождитесь письма об итогах отбора. <br>Начните учиться</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <hr>
+        <div class="footer__wrapper">
+          <span class="footer__text">© 2022 «Тинькофф Образование»</span>
+          <span class="footer__text">По вопросам пишите на <a href="mailto:edu@tinkoff.ru" class="footer__mail-link">edu@tinkoff.ru</a></span>
+        </div>
+      </div>
+    </footer>
+
     <script type="module" src="./main.js"></script>
   </body>
 </html>
