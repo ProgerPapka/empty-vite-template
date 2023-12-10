@@ -1,0 +1,29 @@
+.list {
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+  &__item {
+    position: relative;
+    color: var(--day-text-text-01);
+    padding-left: 20px;
+    font-size: 13px;
+    line-height: 24px;
+    margin-bottom: 12px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      width: 12px;
+      height: 24px;
+      background-image: url('/assets/icons/dash.svg');
+      left: 0;
+      top: 0;
+    }
+  }
+  &_right {
+    margin-top: 48px;
+    width: 336px;
+  }
+}

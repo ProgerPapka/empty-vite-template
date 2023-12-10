@@ -1,0 +1,23 @@
+.button {
+  font-size: 13px;
+  line-height: 24px;
+  color: var(--day-text-text-01);
+  text-align: center;
+  font-weight: 400;
+  padding: 16px 36px;
+  border-radius: 8px;
+  background-color: var(--day-base-primary);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  &:hover {
+    background-color: var(--day-base-primary-hover);
+  }
+  &:active {
+    background-color: var(--day-base-primary-active)
+  }
+  &:focus {
+    border: 2px solid var(--day-system-focus);
+    padding: 14px 34px;
+  }
+}
