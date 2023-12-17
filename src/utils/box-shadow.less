@@ -1,0 +1,7 @@
+.box-shadow(@x, @y, @blur, @color, @inset: false, @spread: 0) {
+  box-shadow: if(
+    @inset,
+    inset @x @y @blur @spread @color,
+    @x @y @blur @spread @color
+  );
+}
