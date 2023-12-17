@@ -1,0 +1,85 @@
+// TODO: на чистом css не стал реализовывать так как код будет слишком большим
+/* 
+  функция генератор колонок
+  свойство показывает сколько колонок занимет данные селектор
+  например: 
+      col_md-4 - элемент займет 4 колонки на десктопе (1/3 часть)
+      col_xs-12 - элемент займет 12 колонок на мобилках(100%)
+      col_sm-6 - элемент займет 6 колонок на планшетах(половину)
+
+  @infix - устройство
+  @n - общее кол-во колонок
+  @padding - внутренние отсупы
+  @i - итерируемый элемент(кастомная реализация loop в less посредством рекурсии)
+*/
+.generate-columns(@infix, @n, @padding, @i: 1) when (@i =< @n) {
+  .generate-columns(@infix, @n, @padding, (@i + 1));
+
+  &_@{infix}-@{i} {
+    width: (@i * 100% / @n);
+    padding-left: @padding;
+    padding-right: @padding;
+    box-sizing: border-box;
+  }
+
+  & when (@infix) {
+    .generate-columns(@n, @padding, (@i + 1));
+
+    &_@{i} {
+      width: (@i * 100% / @n);
+      padding-left: @padding;
+      padding-right: @padding;
+      box-sizing: border-box;
+    }
+  }
+}
+
+/* 
+  контейнер для строки
+  обязательный контейнер для колонок
+
+
+*/
+.row {
+  display: flex;
+  flex-flow: row wrap;
+
+  @media @mobile {
+    margin-left: -4px;
+    margin-right: -4px;
+  }
+
+  @media @tablet-interval {
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+
+  @media @desktop-min {
+    margin-left: -16px;
+    margin-right: -16px;
+  }
+}
+
+/* 
+  генерация колонок
+  колонки указываются только в строках(.row)
+  @infix устройство на котором будет приминено данной свойство
+  md - по дефолту либо дектопы
+  sm - планшеты
+  xs - мобилки
+*/
+.col {
+  .generate-columns(md, 12, 24px);
+
+  @media @mobile {
+    .generate-columns(xs, 12, 4px);
+  }
+
+  @media @tablet-interval {
+    .generate-columns(sm, 12, 8px);
+  }
+
+  @media @desktop-min {
+    .generate-columns(md, 12, 16px);
+  }
+}
