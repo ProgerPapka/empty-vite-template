@@ -1,6 +1,117 @@
 @import './src/helper';
 @import './src/logo.less';
+@import "./src/content1";
+@import "./src/content2";
+@import "./src/content3";
+@import "./src/content4";
+@import "./src/content5";
+@import "./src/content6";
+@import "./src/footer";
 
 body {
   font-family: 'Roboto', sans-serif;
+  background: #F6F7F8;
+}
+
+header {
+  height: 104px;
+  width: 100%;
+}
+
+div {
+  border: 0;
+  font: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  box-sizing: border-box;
+  width: 100%;
+}
+.headerbox {
+  background-color: #FFFFFF;
+  box-shadow: 0 4px 56px rgba(0,0,0,.12);
+  height: 64px;
+  width: 100%;
+  display: block;
+}
+
+.headerelementsbox {
+  max-width: 1200px;
+  padding: 0 48px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.headerelements {
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    min-height: 64px;
+}
+
+.elements-box {
+  margin-right: 48px;
+  align-items: center;
+  display: flex;
+  flex: 1 0;
+}
+
+.elements {
+  justify-content: flex-start;
+  display: flex;
+  flex: 1 0;
+  flex-wrap: wrap;
+  height: 64px;
+  overflow: hidden;
+  padding-right: 24px;
+}
+
+.element {
+  align-items: stretch;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-right: 24px;
+}
+
+.item {
+  color: rgba(0, 0, 0, 0.54);
+  display: inline-flex;
+  font: 400 13px/20px Roboto;
+  letter-spacing: 0;
+  outline: none;
+  position: relative;
+  text-decoration: none;
+  transition: .3s ease-in-out;
+  transition-property: color,box-shadow;
+  white-space: nowrap;
+  align-items: center;
+  height: 64px;
+}
+
+.item:hover {
+  color: #000000CC;
+  box-shadow: inset 0 -3px 0 -1px rgba(147, 147, 147, 0.4);
+}
+
+.text {
+  color: #000000CC;
+  position: relative;
+  font: "Roboto";
+}
+
+::selection {
+  background: rgba(255,221,45,.32)!important;
+  color: rgba(0,0,0,.8)!important;
+  text-shadow: none;
 }
