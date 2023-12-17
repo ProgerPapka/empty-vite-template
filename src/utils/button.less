@@ -1,0 +1,27 @@
+.button {
+  padding: 16px 36px;
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  background-color: var(--primary);
+  border-radius: var(--radius-s);
+
+  &:hover {
+    background: var(--primary-hover);
+    .transition(background, 0.3s);
+  }
+
+  &:active {
+    background: var(--primary-active);
+    .transition(background, 0.3s);
+    padding: 14px 34px;
+    box-sizing: border-box;
+  }
+
+  &:focus {
+    border: 2px solid var(--base-06);
+  }
+}
