@@ -1,24 +1,169 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link
-      rel="icon"
-      type="image/svg+xml"
-      href="https://acdn.tinkoff.ru/params/common_front/resourses/icons/favicon-32x32.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
-      rel="stylesheet" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Тинькофф Образование</title>
-  </head>
-  <body>
-    <div class="logo"></div>
-    <div class="login-icon"></div>
-    <img src="/assets/images/frontend.png" alt="Фронтенд технологии" />
-    <h1>Frontend-разработчик</h1>
-    <script type="module" src="./main.js"></script>
-  </body>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="web-programming%20task.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web development html task</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <img src="assets/images/logo.svg" alt="logo">
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">Финтех курсы</a></li>
+                    <li><a href="#">Стажировки</a></li>
+                    <li><a href="#">Мероприятия и партнерства</a></li>
+                </ul>
+            </nav>
+            <div class="login-btn">
+                <a href="#">Войти</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="content-section">
+        <div class="content-container">
+            <h1>Frontend-разработчик</h1>
+            <p>Трехмесячный бесплатный учебный курс от Финтеха, который можно пройти из любой точки России</p>
+            <button class="details-btn">Подробнее</button>
+        </div>
+        <div class="image-container">
+            <img src="assets\images\frontend.png" alt="photo">
+        </div>
+    </main>
+
+    <section class="course-suitability">
+        <h2>Кому подойдет курс</h2>
+        <div class="content-wrapper">
+            <div class="image-container2">
+                <img src="assets/images/about-course-560.png" alt="another photo">
+            </div>
+            <div class="text-container">
+                <ul>
+                    <li>Вы студент или выпускник технических вузов</li>
+                    <li>Хотите научиться создавать интерфейсы</li>
+                    <li>Хотите познакомиться с современным JavaScript и его фреймворками</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="course-overview">
+        <div class="content-container">
+            <h1>Что вас ждет на курсе</h1>
+            <div class="card-group">
+                <div class="card card-small">
+                    <h2>Основы разработки</h2>
+                    <p>Делимся инструментами, которые позволяют нам создавать веб-продукты для миллионов клиентов</p>
+                </div>
+                <div class="card card-small">
+                    <h2>Доступ к учебным материалам онлайн</h2>
+                    <p>Онлайн-курс с лекциями и домашними заданиями. Вы можете его пройти из любой точки России</p>
+                </div>
+                <div class="card card-small">
+                    <h2>Возможность попасть в команду</h2>
+                    <p>Во время курса участники выполняют много практических заданий. Мы замечаем лучших и приглашаем их на собеседование</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="learning-structure">
+        <div class="content-container">
+            <h1>Как строится обучение</h1>
+            <div class="card-group">
+                <div class="card">
+                    <h2>Онлайн-занятия 1 раз в неделю</h2>
+                    <li>Курс стартует в середине февраля и длится три месяца</li>
+                    <li>В неделю будете тратить около 2-3 часов на лекции и столько, сколько сочтете нужным, на домашнюю работу</li>
+                </div>
+                <div class="card">
+                    <h2>Интерактив и нетворкинг</h2>
+                    <li>Вы сможете задавать вопросы преподавателям во время лекций в Zoom или в общем чате</li>
+                    <li>Обсуждать материалы и домашки вместе с сокурсниками. Это поможет найти новый профессиональный круг общения</li>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="free-education">
+    <div class="content-container">
+        <h1>Бесплатное обучение</h1>
+        <div class="card-group">
+            <div class="card">
+                <div class="icon">
+                    <img src="assets/icons/academic.svg" alt="one more photo">
+                </div>
+                <h2>Каждый студент проходит тщательный отбор</h2>
+                <ul>
+                    <li>Пройдите экзамен и заполните анкету, которая выполняет функцию портфолио</li>
+                    <li>Расскажите подробно о своем опыте: сильное портфолио влияет на решение</li>
+                </ul>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <img src="assets/icons/doc.svg" alt="last photo">
+                </div>
+                <h2>Одинаковые условия для всех</h2>
+                <ul>
+                    <li>Чтобы успешно закончить курс, нужно выполнить обязательные домашние задания и защитить проект</li>
+                    <li>После обучения выдаем сертификат, подтверждающий, что вы освоили теорию и навыки веб-разработки</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="how-to-join">
+    <div class="content-container">
+        <h1>Как попасть на курс</h1>
+        <div class="steps-group">
+            <div class="step">
+                <div class="number-box">
+                    <span class="number">1</span>
+                </div>
+                <p>Оставьте заявку онлайн и зарегистрируйтесь на сайте</p>
+            </div>
+            <div class="step">
+                <div class="number-box">
+                    <span class="number">2</span>
+                </div>
+                <p>Расскажите в анкете, почему хотите изучить веб-разработку</p>
+            </div>
+            <div class="step">
+                <div class="number-box">
+                    <span class="number">3</span>
+                </div>
+                <p>Пройдите экзамен: решите несколько задач по программированию</p>
+            </div>
+            <div class="step">
+                <div class="number-box">
+                    <span class="number">4</span>
+                </div>
+                <p>Дождитесь письма об итогах отбора. Начните учиться</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-content">
+        <span>© 2022 «Тинькофф Образование»</span>
+        <span>По вопросам пишите на <a href="mailto:edu@tinkoff.ru">edu@tinkoff.ru</a></span>
+    </div>
+</footer>
+</body>
 </html>
