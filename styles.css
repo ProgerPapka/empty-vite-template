@@ -1,3 +1,21 @@
+:root {
+    --font-color-main: #333;
+    --font-color-secondary: #000;
+    --font-color-light: #888888;
+    --font-color-link: #0000FF;
+    --background-color-main: #f4f4f4;
+    --background-color-card: #ffffff;
+    --background-color-button: #fdd835;
+    --background-color-button-hover: #fbc02d;
+    --background-color-header: #fff;
+    --background-color-step: white;
+    --background-color-number-box: black;
+    --border-color-footer: #CCCCCC;
+    --link-hover-color: rgba(0, 123, 255, 0.1);
+    --box-shadow-light: rgba(0, 0, 0, 0.1);
+    --link-border-hover: gray;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
