@@ -1,0 +1,228 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+:root {
+  --color-gray: #333333;
+  --color-text-primary: #000000cc;
+  --color-text-secondary: #000000cc;
+  --color-white: #ffffff;
+  --color-blue: #336fee;
+  --color-yellow: #ffdd2d;
+  --color-background-secondary: #f6f7f8;
+  --color-orange-hover: #fcc521;
+  --color-orange-active: #fab619;
+  --color-orange-focus: #ffdd2d;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--color-background-secondary);
+}
+.container {
+  margin: 0 auto;
+  width: 1104px;
+}
+.title {
+  padding: 76px 0 24px 0;
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 48px;
+  text-align: center;
+}
+.button {
+  padding: 16px 36px;
+  border: none;
+  background-color: var(--color-yellow);
+  cursor: pointer;
+  border-radius: 8px;
+}
+.button:hover {
+  background-color: var(--color-orange-hover);
+}
+.frame__content {
+  padding: 24px 0;
+}
+/* HEADER */
+.header {
+  height: 64px;
+  background-color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.12);
+  margin-bottom: 4px;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: inherit;
+}
+
+.header__left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  height: inherit;
+}
+.header__navigation {
+  height: inherit;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  height: inherit;
+}
+.navigation-item {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  height: inherit;
+  display: flex;
+  align-items: center;
+}
+.navigation-item.active {
+  color: var(--color-text-primary);
+  border-bottom: 1px solid;
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.header__login-btn {
+  background: none;
+  color: var(--color-blue);
+  border: none;
+}
+/* HEADER */
+
+/* ONBOARDING */
+.onboarding__container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.onboarding__description {
+  color: var(--color-text-secondary);
+  font-size: 15px;
+}
+.onboarding__title,
+.onboarding__description {
+  text-align: center;
+}
+.onboarding__banner {
+  margin-top: 64px;
+}
+.onboarding__button {
+  width: fit-content;
+  margin-top: 40px;
+}
+
+.course__content {
+  display: flex;
+  gap: 48px;
+}
+.course__list {
+  padding-top: 48px;
+}
+.text-list-item {
+  margin-bottom: 12px;
+  color: var(--color-text-primary);
+  font-size: 15px;
+}
+
+.waitings__cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 48px;
+}
+.card {
+  background-color: var(--color-white);
+  border-radius: 24px;
+  padding: 32px;
+}
+.card-title {
+  font-size: 24px;
+  font-weight: 700;
+}
+.card-description {
+  margin-top: 16px;
+  font-size: 14px;
+  color: var(--color-text-primary);
+  line-height: 24px;
+}
+
+/*  */
+.education-build__cards,
+.education-free__cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+}
+
+.card__list {
+  margin-top: 16px;
+}
+
+/*  */
+
+.enroll__cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 48px;
+}
+.enroll__card {
+  background-color: var(--color-white);
+  padding: 56px 32px;
+  border-radius: 24px;
+  position: relative;
+}
+.enroll__card-number {
+  position: absolute;
+  left: 50%;
+  top: -28px;
+  transform: translateX(-50%);
+  width: 56px;
+  aspect-ratio: 1 / 1;
+  border-radius: 16px;
+  background-color: var(--color-gray);
+  display: grid;
+  place-items: center;
+  color: var(--color-white);
+}
+.enroll__content {
+  padding-top: 48px;
+}
+.enroll__card-description {
+  text-align: center;
+  font-size: 15px;
+  color: var(--color-text-secondary);
+}
+
+.footer {
+  color: var(--color-text-secondary);
+  font-size: 13px;
+  margin-top: 108px;
+}
+.footer__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0 24px 0;
+  border-top: 1px solid #e7e8ea;
+}
+
+.footer span {
+  color: var(--color-blue);
+}
